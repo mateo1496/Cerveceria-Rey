@@ -1,6 +1,8 @@
+import React from "react";
 import Logo from "../LogoProyecto.png";
+import CartWidget from "./CartWidget";
 
-export function NavBar() {
+const NavBar = () => {
     return(
       <header>
         <nav className="nav">
@@ -15,7 +17,9 @@ export function NavBar() {
             <li className="link"><a href="#"></a>Sin Alcohol</li>
             <li className="link"><a href="#"></a>Vino</li>
           </ul>
+          <CartWidget />
         </nav>
+        
       </header>
     );
 }
