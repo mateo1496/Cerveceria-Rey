@@ -6,19 +6,15 @@ function ItemCount() {
   let max = 10;
 
   const initial = () =>{
-    if(count < max){
-        setCount(count + 1);
-    } else {
-        alert("Usted no puedo seguir comprando este producto");
-    }
+    count < max
+    ? setCount(count + 1)
+    : alert("Usted no pued seguir comprando este producto");
   }
 
   const stock = () =>{
-     if(count >= 2){
-        setCount(count - 1);
-     } else{
-        alert("Ya llego al minimo de productos");
-     }
+    count >= 2
+    ? setCount(count - 1)
+    : alert("No hay mas stock");
   }
 
   const onAdd = () =>{
