@@ -6,10 +6,10 @@ const NavBar = () => {
     return(
       <header>
         <nav className="nav">
-          <a href="" className="logo">
+          <a href="../index.js" className="logo">
             <img class="logo-img" src={Logo} alt="Logo"></img>
           </a>
-
+        
           <ul className="navLinks">
             <li className="link"><a href="#"></a>Cervezas</li>
             <li className="link" ><a href="#"></a>Espumantes</li>
