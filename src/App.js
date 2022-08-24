@@ -7,11 +7,12 @@ import Footer from './components/Footer';
 import ItemCount from './components/ItemCount';
 
 function App() {
+ 
   return (
     <div>
      <NavBar /> 
      <ItemListContainer saludo="Bienvenidos a Cerveceria Rey" />
-     <ItemCount />
+     <ItemCount stock={10} initial={1} onAdd="Felicitaciones por su compra" />
      <Layout>
       <Footer />
      </Layout>
