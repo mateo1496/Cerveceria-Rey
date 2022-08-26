@@ -129,7 +129,21 @@ li{
 }
 
 /* CARD */
+.allCard{
+    border: 1px solid black;
+    transition: all 0.9s;
+    cursor: pointer;
+    background-color: yellow;
+    margin-top: 20px;
+    margin-left: 15px;
+}
+
+.allCard :hover{
+    transform: scale(1.2);
+}
+
 .img{
     width: 200px;
     height: 200px;
+    margin-left: 120px;
 }
