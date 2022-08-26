@@ -6,7 +6,7 @@ export const products = [
         price: 190,
         stock: 25,
         category: "cerveza",
-        img: "../assets/andes.jpg",
+        img: "../assets/andes.png",
     },
     {
         id: 2,
@@ -15,7 +15,7 @@ export const products = [
         price: 80,
         stock: 40,
         category: "cerveza",
-        img: "../assets/brahma.jpg",
+        img: "../assets/brahma.png",
     },
     {
         id: 3,
@@ -24,7 +24,7 @@ export const products = [
         price: 170,
         stock: 10,
         category: "cerveza",
-        img: "../assets/budweiser.jpg",
+        img: "../assets/budweiser.png",
     },
     {
         id: 4,
@@ -33,7 +33,7 @@ export const products = [
         price: 250,
         stock: 25,
         category: "cerveza",
-        img: "../assets/corona.jpg",
+        img: "../assets/corona.png",
     },
     {
         id: 5,
@@ -42,7 +42,7 @@ export const products = [
         price: 200,
         stock: 20,
         category: "cerveza",
-        img: "../assets/heinken.jpg",
+        img: "../assets/heineken.png",
     },
     {
         id: 6,
@@ -51,7 +51,7 @@ export const products = [
         price: 220,
         stock: 30,
         category: "cerveza",
-        img: "../assets/miller.jpg",
+        img: "../assets/miller.png",
     },
     {
         id: 7,
@@ -60,7 +60,7 @@ export const products = [
         price: 100,
         stock: 15,
         category: "cerveza",
-        img: "../assets/quilmes.jpg",
+        img: "../assets/quilmes.png",
     },
     {
         id: 8,
@@ -69,7 +69,7 @@ export const products = [
         price: 125,
         stock: 25,
         category: "cerveza",
-        img: "../assets/schneider.jpg",
+        img: "../assets/schneider.png",
     },
     {
         id: 9,
@@ -78,7 +78,7 @@ export const products = [
         price: 230,
         stock: 18,
         category: "cerveza",
-        img: "../assets/sol.jpg",
+        img: "../assets/sol.png",
     },
     {
         id: 10,
@@ -87,7 +87,7 @@ export const products = [
         price: 240,
         stock: 22,
         category: "cerveza",
-        img: "../assets/stella-artois.jpg",
+        img: "../assets/stella-artois.png",
     },
     {
         id: 11,
@@ -96,7 +96,7 @@ export const products = [
         price: 2500,
         stock: 16,
         category: "licor",
-        img: "../assets/amarula.jpg",
+        img: "../assets/amarula.png",
     },
     {
         id: 12,
@@ -105,7 +105,7 @@ export const products = [
         price: 2800,
         stock: 12,
         category: "licor",
-        img: "../assets/baileys.jpg",
+        img: "../assets/baileys.png",
     },
     {
         id: 13,
@@ -114,7 +114,7 @@ export const products = [
         price: 3600,
         stock: 10,
         category: "licor",
-        img: "../assets/black-label.jpg",
+        img: "../assets/black-label.png",
     },
     {
         id: 14,
@@ -123,7 +123,7 @@ export const products = [
         price: 4000,
         stock: 8,
         category: "licor",
-        img: "../assets/blue-label.jpg",
+        img: "../assets/blue-label.png",
     },
     {
         id: 15,
@@ -132,7 +132,7 @@ export const products = [
         price: 3800,
         stock: 18,
         category: "licor",
-        img: "../assets/jack-daniels.jpg",
+        img: "../assets/jack-daniels.png",
     },
     {
         id: 16,
@@ -141,7 +141,7 @@ export const products = [
         price: 1600,
         stock: 30,
         category: "licor",
-        img: "../assets/tia-maria.jpg",
+        img: "../assets/tia-maria.png",
     },
     {
         id: 17,
@@ -150,16 +150,16 @@ export const products = [
         price: 500,
         stock: 20,
         category: "vino",
-        img: "../assets/benjamin.jpg",
+        img: "../assets/benjamin.png",
     },
     {
         id: 18,
-        title: "Vino Lorenzo Malbec",
+        title: "Vino Lorenzo Chardonnay",
         description: "",
         price: 480,
         stock: 10,
         category: "vino",
-        img: "../assets/lorenzo.jpg",
+        img: "../assets/lorenzo.png",
     },
     {
         id: 19,
@@ -168,16 +168,16 @@ export const products = [
         price: 750,
         stock: 25,
         category: "vino",
-        img: "../assets/salentein.jpg",
+        img: "../assets/salentein.png",
     },
     {
         id: 20,
-        title: "Vino Terrazas Malbec",
+        title: "Vino Terrazas Chardonnay",
         description: "",
         price: 550,
         stock: 25,
         category: "vino",
-        img: "../assets/terrazas.jpg",
+        img: "../assets/terrazas.png",
     },
     {
         id: 21,
@@ -186,7 +186,7 @@ export const products = [
         price: 50,
         stock: 100,
         category: "Sin Alcohol",
-        img: "../assets/agua.jpg",
+        img: "../assets/agua.png",
     },
     {
         id: 22,
@@ -195,7 +195,7 @@ export const products = [
         price: 75,
         stock: 80,
         category: "Sin Alcohol",
-        img: "../assets/coca-cola.jpg",
+        img: "../assets/coca-cola.png",
     },
     {
         id: 23,
@@ -204,7 +204,7 @@ export const products = [
         price: 60,
         stock: 50,
         category: "Sin Alcohol",
-        img: "../assets/fanta.jpg",
+        img: "../assets/fanta.png",
     },
     {
         id: 24,
@@ -213,7 +213,7 @@ export const products = [
         price: 65,
         stock: 60,
         category: "Sin Alcohol",
-        img: "../assets/sprite.jpg",
+        img: "../assets/sprite.png",
     },
     {
         id: 25,
@@ -222,7 +222,7 @@ export const products = [
         price: 1600,
         stock: 40,
         category: "espumante",
-        img: "../assets/chandon.jpg",
+        img: "../assets/chandon.png",
     },
     {
         id: 26,
@@ -231,7 +231,7 @@ export const products = [
         price: 3500,
         stock: 40,
         category: "espumante",
-        img: "../assets/dom-perignon.jpg",
+        img: "../assets/dom-perignon.png",
     },
     {
         id: 27,
@@ -240,7 +240,7 @@ export const products = [
         price: 800,
         stock: 50,
         category: "espumante",
-        img: "../assets/federico.jpg",
+        img: "../assets/federico.png",
     },
     {
         id: 28,
@@ -249,6 +249,6 @@ export const products = [
         price: 1200,
         stock: 45,
         category: "espumante",
-        img: "../assets/mumm.jpg",
+        img: "../assets/mumm.png",
     },
 ];
