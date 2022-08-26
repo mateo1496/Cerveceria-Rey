@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    overflow: hidden;
+    /* overflow: hidden; */
     box-sizing: border-box;
 }
 
@@ -126,4 +126,10 @@ li{
     font-size: 15px;
     background-color: rgb(255, 102, 0);
     cursor: pointer;
+}
+
+/* CARD */
+.img{
+    width: 200px;
+    height: 200px;
 }
