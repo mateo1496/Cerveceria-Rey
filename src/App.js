@@ -5,7 +5,7 @@ import ItemListContainer from './components/ItemListContainer';
 import Layout from './components/Layout';
 import Footer from './components/Footer';
 import ItemCount from './components/ItemCount';
-import EjercicioApi from './components/EjercicioApi';
+import ItemDetailContainer from './components/ItemDetailContainer'; 
 
 function App() {
  
@@ -14,7 +14,7 @@ function App() {
      <NavBar /> 
      <ItemListContainer saludo="Bienvenidos a Cerveceria Rey"/>
      <ItemCount stock={10} initial={1} onAdd="Felicitaciones por su compra" />
-     {/* <EjercicioApi /> */}
+     <ItemDetailContainer />
      <Layout>
       <Footer />
      </Layout>
@@ -23,3 +23,6 @@ function App() {
 }
 
 export default App;
+
+// import EjercicioApi from './components/EjercicioApi';
+//  <EjercicioApi /> 
