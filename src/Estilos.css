@@ -31,6 +31,16 @@ header{
     transform: scale(1.0);
 }
 
+.link{
+    text-decoration: none;
+    color: black;
+}
+
+.link :hover{
+    color: black;
+}
+
+
 .navLinks{
     display: flex;
     justify-content: space-around;
@@ -43,6 +53,7 @@ header{
 .navLinks :hover{
     cursor: pointer;
     transform: scale(1.2);
+    color: black;
 }
 
 /*FOOTER */
@@ -134,14 +145,25 @@ li{
 /* CARD */
 .allCard{
     border: 1px solid black;
-    cursor: pointer;
     background-color: yellow;
     margin-top: 20px;
     margin-left: 15px;
+    margin-right: 15px;
 }
 
 .img{
     width: 200px;
     height: 200px;
     margin: auto;
+}
+
+.button{
+    background-color: black;
+    padding-left: 20px;
+    margin-right: 20px;
+    color: white;
+    border-radius: 20px;
+    text-align: center;
+    padding: 10px;
+    text-transform: uppercase;
 }
