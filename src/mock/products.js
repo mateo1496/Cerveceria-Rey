@@ -2,7 +2,7 @@ export const products = [
     {
         id: 1,
         title: "Cerveza Andes",
-        description: "",
+        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
         price: 190,
         stock: 25,
         category: "cerveza",
@@ -11,7 +11,7 @@ export const products = [
     {
         id: 2,
         title: "Cerveza Brahma",
-        description: "",
+        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
         price: 80,
         stock: 40,
         category: "cerveza",
@@ -20,7 +20,7 @@ export const products = [
     {
         id: 3,
         title: "Cerveza Budweiser",
-        description: "",
+        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
         price: 170,
         stock: 10,
         category: "cerveza",
@@ -29,7 +29,7 @@ export const products = [
     {
         id: 4,
         title: "Cerveza Corona",
-        description: "",
+        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
         price: 250,
         stock: 25,
         category: "cerveza",
@@ -38,7 +38,7 @@ export const products = [
     {
         id: 5,
         title: "Cerveza Heineken",
-        description: "",
+        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
         price: 200,
         stock: 20,
         category: "cerveza",
@@ -47,7 +47,7 @@ export const products = [
     {
         id: 6,
         title: "Cerveza Miller",
-        description: "",
+        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
         price: 220,
         stock: 30,
         category: "cerveza",
@@ -56,7 +56,7 @@ export const products = [
     {
         id: 7,
         title: "Cerveza Quilmes",
-        description: "",
+        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
         price: 100,
         stock: 15,
         category: "cerveza",
@@ -65,7 +65,7 @@ export const products = [
     {
         id: 8,
         title: "Cerveza Schneider",
-        description: "",
+        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
         price: 125,
         stock: 25,
         category: "cerveza",
@@ -74,7 +74,7 @@ export const products = [
     {
         id: 9,
         title: "Cerveza Sol",
-        description: "",
+        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
         price: 230,
         stock: 18,
         category: "cerveza",
@@ -83,7 +83,7 @@ export const products = [
     {
         id: 10,
         title: "Cerveza Stella Artois",
-        description: "",
+        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
         price: 240,
         stock: 22,
         category: "cerveza",
@@ -92,7 +92,7 @@ export const products = [
     {
         id: 11,
         title: "Licor Amarula",
-        description: "",
+        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
         price: 2500,
         stock: 16,
         category: "licor",
@@ -101,7 +101,7 @@ export const products = [
     {
         id: 12,
         title: "Licor Baileys",
-        description: "",
+        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
         price: 2800,
         stock: 12,
         category: "licor",
@@ -110,7 +110,7 @@ export const products = [
     {
         id: 13,
         title: "Licor Black Label",
-        description: "",
+        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
         price: 3600,
         stock: 10,
         category: "licor",
@@ -119,7 +119,7 @@ export const products = [
     {
         id: 14,
         title: "Licor Blue Label",
-        description: "",
+        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
         price: 4000,
         stock: 8,
         category: "licor",
@@ -128,7 +128,7 @@ export const products = [
     {
         id: 15,
         title: "Licor Jack Daniels",
-        description: "",
+        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
         price: 3800,
         stock: 18,
         category: "licor",
@@ -137,7 +137,7 @@ export const products = [
     {
         id: 16,
         title: "Licor Tia Maria",
-        description: "",
+        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
         price: 1600,
         stock: 30,
         category: "licor",
@@ -146,7 +146,7 @@ export const products = [
     {
         id: 17,
         title: "Vino Benjamin Malbec",
-        description: "",
+        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
         price: 500,
         stock: 20,
         category: "vino",
@@ -155,7 +155,7 @@ export const products = [
     {
         id: 18,
         title: "Vino Lorenzo Chardonnay",
-        description: "",
+        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
         price: 480,
         stock: 10,
         category: "vino",
@@ -164,7 +164,7 @@ export const products = [
     {
         id: 19,
         title: "Vino Salentein Malbec",
-        description: "",
+        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
         price: 750,
         stock: 25,
         category: "vino",
@@ -173,7 +173,7 @@ export const products = [
     {
         id: 20,
         title: "Vino Terrazas Chardonnay",
-        description: "",
+        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
         price: 550,
         stock: 25,
         category: "vino",
@@ -182,43 +182,43 @@ export const products = [
     {
         id: 21,
         title: "Agua Mineral",
-        description: "",
+        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
         price: 50,
         stock: 100,
-        category: "Sin Alcohol",
+        category: "sin alcohol",
         img: "../assets/agua.png",
     },
     {
         id: 22,
         title: "Coca Cola",
-        description: "",
+        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
         price: 75,
         stock: 80,
-        category: "Sin Alcohol",
+        category: "sin alcohol",
         img: "../assets/coca-cola.png",
     },
     {
         id: 23,
         title: "Fanta",
-        description: "",
+        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
         price: 60,
         stock: 50,
-        category: "Sin Alcohol",
+        category: "sin alcohol",
         img: "../assets/fanta.png",
     },
     {
         id: 24,
         title: "Sprite",
-        description: "",
+        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
         price: 65,
         stock: 60,
-        category: "Sin Alcohol",
+        category: "sin alcohol",
         img: "../assets/sprite.png",
     },
     {
         id: 25,
         title: "Chandon",
-        description: "",
+        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
         price: 1600,
         stock: 40,
         category: "espumante",
@@ -227,7 +227,7 @@ export const products = [
     {
         id: 26,
         title: "Dom Perignon",
-        description: "",
+        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
         price: 3500,
         stock: 40,
         category: "espumante",
@@ -236,7 +236,7 @@ export const products = [
     {
         id: 27,
         title: "Federico De Alvear",
-        description: "",
+        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
         price: 800,
         stock: 50,
         category: "espumante",
@@ -245,7 +245,7 @@ export const products = [
     {
         id: 28,
         title: "Mumm",
-        description: "",
+        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
         price: 1200,
         stock: 45,
         category: "espumante",
