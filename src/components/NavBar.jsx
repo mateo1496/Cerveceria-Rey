@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Logo from "../LogoProyecto.png";
 import CartWidget from "./CartWidget";
 
@@ -6,16 +7,15 @@ const NavBar = () => {
     return(
       <header>
         <nav className="nav">
-          <a href="../index.js" className="logo">
-            <img class="logo-img" src={Logo} alt="Logo"></img>
-          </a>
+           <Link to="/"><img class="logo logo-img" src={Logo} alt="Logo"></img></Link>
+       
         
           <ul className="navLinks">
-            <li className="link"><a href="#"></a>Cervezas</li>
-            <li className="link" ><a href="#"></a>Espumantes</li>
-            <li className="link"><a href="#"></a>Licores</li>
-            <li className="link"><a href="#"></a>Sin Alcohol</li>
-            <li className="link"><a href="#"></a>Vino</li>
+            <Link to="category/cerveza" className="link">Cervezas</Link>
+            <Link to="category/espumante" className="link" >Espumantes</Link>
+            <Link to="category/licor" className="link">Licores</Link>
+            <Link to="category/sin alcohol" className="link">Sin Alcohol</Link>
+            <Link to="category/vino" className="link">Vino</Link>
           </ul>
           <CartWidget />
         </nav>
