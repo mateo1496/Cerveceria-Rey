@@ -19,9 +19,9 @@ const ItemCount = (props) => {
     }
   }
 
-  const comprar = () =>{
-      alert(props.onAdd);
-  }
+  // const comprar = () =>{
+  //     alert(props.onAdd);
+  // }
 
 
   return (
@@ -29,7 +29,7 @@ const ItemCount = (props) => {
         <button className='botonInitial' onClick={sumar}>+</button>
         <button className='botonStock' onClick={restar}>-</button>
         <h4 className='count'>Count: {count}</h4>
-        <button className='botonOnAdd' onClick={comprar}>Comprar Producto</button>
+        <button className='botonOnAdd' onClick={() => props.onAdd(count)}>Comprar Producto</button>
     </div>
   )
 }
