@@ -36,7 +36,7 @@ function ItemDetailContainer() {
     }
   },[idProd])
 
-  console.log(item);
+  // console.log(item);
 
 
   return (
