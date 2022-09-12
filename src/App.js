@@ -8,22 +8,26 @@ import Layout from './components/Layout';
 import Footer from './components/Footer';
 import ItemDetailContainer from './components/ItemDetailContainer'; 
 import Cart from "./components/Cart";
+import CartProvider from "./components/CartContext"
 
 function App() {
  
   return (
-    <BrowserRouter>
-     <NavBar /> 
-     <Routes>
-      <Route path='/' element={<ItemListContainer saludo="Bienvenidos a Cerveceria Rey"/>}/>
-      <Route path="/category/:id" element={<ItemListContainer saludo="Bienvenidos a Cerveceria Rey"/>} />
-      <Route path='/item/:id' element={<ItemDetailContainer />} />
-      <Route path="/Cart" element={<Cart />} />
-     </Routes>
-     <Layout>
-      <Footer />
-     </Layout>
-    </BrowserRouter>
+    <CartProvider>
+       <BrowserRouter>
+          <NavBar /> 
+          <Routes>
+            <Route path='/' element={<ItemListContainer saludo="Bienvenidos a Cerveceria Rey"/>}/>
+            <Route path="/category/:id" element={<ItemListContainer saludo="Bienvenidos a Cerveceria Rey"/>} />
+            <Route path='/item/:id' element={<ItemDetailContainer />} />
+            <Route path="/Cart" element={<Cart />} />
+          </Routes>
+        <Layout>
+          <Footer />
+        </Layout>
+      </BrowserRouter>
+    </CartProvider>
+    
   );
 }
 
