@@ -7,7 +7,7 @@ const NavBar = () => {
     return(
       <header>
         <nav className="nav">
-           <Link to="/"><img class="logo logo-img" src={Logo} alt="Logo"></img></Link>
+           <Link to="/"><img className="logo logo-img" src={Logo} alt="Logo"></img></Link>
        
         
           <ul className="navLinks">
