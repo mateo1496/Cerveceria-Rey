@@ -2,11 +2,13 @@ import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom';
 import  { products } from "../mock/products";
 import ItemDetail from './ItemDetail';
+import { FadeLoader } from 'react-spinners';
 
 function ItemDetailContainer() {
   const [item, setItems] = useState({});
   const { id } = useParams();
   const idProd = Number(id);
+  const [spinner, setSpinner] = useState(true)
 
   useEffect(() =>{
     if(idProd){
@@ -19,7 +21,8 @@ function ItemDetailContainer() {
       
       obtProduct
       .then((dato) =>{
-        setItems(dato);      
+        setItems(dato); 
+        setSpinner(false)     
       })
     } else{
       const obtProduct = new Promise ((res, rej)=>{
@@ -31,8 +34,13 @@ function ItemDetailContainer() {
       
       obtProduct
       .then((dato) =>{
-        setItems(dato);      
+        setItems(dato); 
+        setSpinner(false)     
       })
+    }
+
+    return () =>{
+      setSpinner(false);
     }
   },[idProd])
 
@@ -40,7 +48,13 @@ function ItemDetailContainer() {
 
 
   return (
-    <ItemDetail item={item}/>
+    <div>
+      {
+        spinner 
+        ? <FadeLoader color="rgba(240, 113, 9, 0.9)" margin="10px"  size={150} /> 
+        : <ItemDetail item={item}/>
+      }
+    </div>
   )
 }
 
