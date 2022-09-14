@@ -1,10 +1,15 @@
 import React, { useState } from 'react';
+import { useEffect } from 'react';
 
-const ItemCount = (props) => {
-  const [count, setCount] = useState(1);
+const ItemCount = ({stock, onAdd, initial = 1}) => {
+  const [count, setCount] = useState(initial);
+
+  useEffect(()=>{
+    setCount(initial)
+  },[initial])
    
   const sumar = () =>{
-    if(count < props.stock){
+    if(count < stock){
       setCount(count + 1)
     } else {
       alert("No puede seguir comprando este producto");
@@ -12,7 +17,7 @@ const ItemCount = (props) => {
   }
 
   const restar = () =>{
-    if(count > props.initial){
+    if(count > initial){
       setCount(count - 1)
     } else {
       alert("No hay mas stock");
@@ -20,7 +25,7 @@ const ItemCount = (props) => {
   }
 
   // const comprar = () =>{
-  //     alert(props.onAdd);
+  //     alert(onAdd);
   // }
 
 
@@ -29,7 +34,7 @@ const ItemCount = (props) => {
         <button className='botonInitial' onClick={sumar}>+</button>
         <button className='botonStock' onClick={restar}>-</button>
         <h4 className='count'>Count: {count}</h4>
-        <button className='botonOnAdd' onClick={() => props.onAdd(count)}>Comprar Producto</button>
+        <button className='botonOnAdd' onClick={() => onAdd(count)}>Comprar Producto</button>
     </div>
   )
 }
