@@ -21,7 +21,7 @@ const CartProvider = ({ children }) =>{
             if (prod.id === item.id) { //PREGUNTO QUE PRODUCTO TENGO QUE ACTUALIZAR. PREGUNTO SI EL PROD.ID ES IGUAL AL ID QUE ESTOY AGREGANDO.
                 const prodNew = { //PARA AGREGAR EL PRODUCTO SI TODAVIA NO LO AGREGUE AL CARRITO (CART)
                     ...prod, //CON SPREAD HAGO LA ITERACION DEL PRODUCTO, AGREGO EL PRODUCTO Y SUS PROPIEDADES + CANTIDAD. SOLO ACTUALIZO LA CANTIDAD
-                    q: prod.q + q
+                    q:  q //NO SE ACUMULA CANTIDAD Y NO SE PASA DEL STOCK.
                 }
                 return prodNew //SI EL PRODUCTO YA ESTA, LO DEJO
             } else {
@@ -48,8 +48,32 @@ const CartProvider = ({ children }) =>{
         setCart([]);
     }
 
+    //PARA SABER LA CANTIDAD DE UN PRODUCTO
+    const prodCant = (id) =>{
+        const cantidad = cart.find((prod)=> prod.id === id); //RECORRO EL CARRITO Y VEO SI EL ID YA ESTA EN EL CARRITO
+        return cantidad?.q //RETORNAR LA CANTIDAD DEL PRODUCTO, SI EL PRODUCTO NO ESTA EN EL CARRITO RETORNA UNDEFINED. CON EL ? (OPTIONAL CHAINING) PERMITE QUE SI EL PRODUCTO NO ESTA EN EL CARRITO NO ARROJE UNDEFINED, SINO ES UNDEFINED RETORNA LA CANTIDAD.
+    }
+
+    //PARA CALCULAR EL TOTAL
+    const totalPrice = () =>{
+        let totalProd = 0
+        cart.forEach((prod) =>{
+            totalProd = totalProd + (prod.price * prod.q);
+        });
+        return totalProd;
+    }
+
+    //PARA CALCULAR EL TOTAL DE UNIDAD DEL CARRITO
+    const totalCant = () =>{
+        let totalCantProd = 0
+        cart.forEach((prod)=>{
+            totalCantProd += prod.q
+        });
+        return totalCantProd;
+    }
+
     return(
-        <CartContext.Provider value={{ cart, addItem, removeItem, clear }}>
+        <CartContext.Provider value={{ cart, addItem, removeItem, clear, prodCant, totalPrice, totalCant }}>
            {children}
         </CartContext.Provider>
     );
