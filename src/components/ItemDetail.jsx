@@ -7,12 +7,14 @@ import { CartContext } from './CartContext';
 
 function ItemDetail({item}) {
   const [cantidad, setCantidad] = useState(0);
-  const { cart, addItem } = useContext(CartContext);
+  const { cart, addItem, prodCant } = useContext(CartContext);
 
   const onAdd = (q) => {
     setCantidad(q);
     addItem(item, q); //ACA PASO EL PRODUCTO Y Q ES LA CANTIDAD, DECIDO QUE QUIERO MOSTRAR.
   } 
+
+  const unicProd = prodCant(item.id); //DEFINIMOS LA CANTIDAD DE CANTIDADES QUE VA A TENER UN PRODUCTO.
 
   console.log(cart); //ME IMPRIME EL ESTADO
 
@@ -27,7 +29,7 @@ function ItemDetail({item}) {
         <button className='button'>Ver Producto</button>
         {
           cantidad === 0
-          ? <ItemCount stock={item.stock} initial={1} onAdd={onAdd} />
+          ? <ItemCount stock={item.stock} initial={unicProd} onAdd={onAdd} />
           : <Link to="/Cart"><button className='button'>Click para continuar con la compra</button></Link>
         }  
       </div> 
