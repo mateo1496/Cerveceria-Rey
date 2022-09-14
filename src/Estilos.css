@@ -47,6 +47,7 @@ header{
     text-transform: uppercase;
     font-size: 30px;
     transition: all 0.9s;
+    margin-top: 15px;
 }
 
 .navLinks :hover{
@@ -59,7 +60,7 @@ header{
 footer{
     background: linear-gradient(90deg, hsla(65, 77%, 63%, 1) 15%, hsla(30, 100%, 50%, 1) 79%, hsla(30, 100%, 50%, 1) 100%);
     font-family: 'Fjalla One', sans-serif;
-    font-size: 15px;
+    font-size: 25px;
     margin-top: 40px;
 }
 
@@ -85,19 +86,19 @@ footer{
     text-transform: uppercase;
 }
 
+
 .redes{
     cursor: pointer;
     padding: 20px;
     color: black;
 }
 
-a{
-    text-decoration: none;
-}
 
 li{
     list-style-type: none;
+    text-decoration: none;
 }
+
 
 /* ITEM COUNT */
 .botonAll{
@@ -207,6 +208,7 @@ li{
     text-transform: uppercase;
 }
 
+
 /* CART */
 .cartCard{
     border: 1px solid black;
@@ -229,16 +231,43 @@ li{
     text-transform: uppercase;
 }
 
+.cobertor{
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    margin-top: 50px;
+}
 
+.titleCart{
+    font-size: 45px;
+    list-style: none;
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: 'Fjalla One', sans-serif;
+}
 
+.linkCart{
+    text-decoration: none;
+    color: black;
+}
 
+.linkCart :hover{
+    background-color: rgba(240, 113, 9, 0.9);
+    border-radius: 5px;
+    color: black;
+    padding: 5px;
+    margin-bottom: 2px;
+}
 
-
-
-
-
-
-
+.buttonTotal{
+    margin-left: 25px;
+    border: 7px solid black;
+    width: 180px;
+    border-radius: 5px;
+    color: white;
+    background-color: black;
+    font-size: 25px;
+}
 
 
 /* VISTA MOBILE */
