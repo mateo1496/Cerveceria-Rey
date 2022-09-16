@@ -223,12 +223,13 @@ li{
 
 .buttonDelete{
     margin-top: 20px;
-    margin-left: 500px;
+    margin-left: 600px;
     border-radius: 60px;
     font-size: 30px;
     background-color: black;
     color: white;
     text-transform: uppercase;
+    width: 50%;
 }
 
 .cobertor{
@@ -260,13 +261,17 @@ li{
 }
 
 .buttonTotal{
-    margin-left: 25px;
+    margin-left: 600px;
     border: 7px solid black;
     width: 180px;
-    border-radius: 5px;
+    border-radius: 60px;
     color: white;
     background-color: black;
-    font-size: 25px;
+    font-size: 30px;
+    width: 50%;
+    margin-top: 20px;
+    text-align: center;
+    text-transform: uppercase;
 }
 
 
