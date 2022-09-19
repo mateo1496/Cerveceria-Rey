@@ -10,8 +10,10 @@ const CartWidget = () => {
     const { totalCant } = useContext(CartContext)
     return(
         <div>
-           <FaShoppingCart className="carrito"/>
-           <Link to="/Cart"><span className="badge bg-secondary m-lg-3 mb-9 carro">{totalCant()}</span></Link>
+            <Link to="/Cart">
+              <FaShoppingCart className="carrito"/>
+              <span className="badge bg-secondary m-lg-3 mb-9 carro">{totalCant()}</span>
+            </Link>
         </div>
     );
 }
