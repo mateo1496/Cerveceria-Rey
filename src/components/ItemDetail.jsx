@@ -7,7 +7,7 @@ import { CartContext } from './CartContext';
 
 function ItemDetail({item}) {
   const [cantidad, setCantidad] = useState(0);
-  const { cart, addItem, prodCant } = useContext(CartContext);
+  const { addItem, prodCant } = useContext(CartContext);
 
   const onAdd = (q) => {
     setCantidad(q);
@@ -16,7 +16,7 @@ function ItemDetail({item}) {
 
   const unicProd = prodCant(item.id); //DEFINIMOS LA CANTIDAD DE CANTIDADES QUE VA A TENER UN PRODUCTO.
 
-  console.log(cart); //ME IMPRIME EL ESTADO
+  // console.log(cart); //ME IMPRIME EL ESTADO
 
   return (
     <div style={{display: "flex"}} key={item.id}>
