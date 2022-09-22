@@ -3,6 +3,7 @@ import { Link } from "react-router-dom"
 import "bootstrap/dist/css/bootstrap.min.css";
 
 function Item({item}) {
+  
   return(
     <div key={item.id}>
       <div className='allCard'>
