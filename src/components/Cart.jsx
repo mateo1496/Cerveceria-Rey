@@ -2,22 +2,11 @@ import React from 'react'
 import { useContext } from 'react'
 import { CartContext } from './CartContext'
 import { Link } from "react-router-dom"
-import Form from './Form'
 import "bootstrap/dist/css/bootstrap.min.css";
-import { useState } from 'react'
 
 
 const Cart = () => {
-  const [compra, setCompra] = useState("");
   const { cart, clear, removeItem, totalPrice,} = useContext(CartContext);
-
-  const handleId = (id) =>{
-    setCompra(id);
-  }
-
-  if(compra){
-    return <h1 className='cartCompra cobertor'>Felicitaciones por su compra. Tu número de pedido es: <h4>{compra}</h4></h1>
-  }
 
   if(cart.length === 0){
        return <h2 className='titleCart cobertor'>Usted no compro ningun producto, <Link className='linkCart' to="/"><b>Click Aquí</b></Link> para ir a la pagina principal y seleccionar uno</h2>;
@@ -44,8 +33,9 @@ const Cart = () => {
       <div className='buttons'>
          <button onClick={clear} className="buttonDelete">Eliminar Productos</button>
          <h4 className='buttonTotal'>Total: ${totalPrice()}</h4>
+         <Link to="/Checkout"><button>ConfirmarCompra</button></Link>
       </div>
-      <Form cart={cart} totalPrice={totalPrice} clear={clear} handleId={handleId} />
+      
     </>
   );
 }
