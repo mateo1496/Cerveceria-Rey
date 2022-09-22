@@ -2,12 +2,12 @@ import { initializeApp } from "firebase/app";
 import { getFirestore } from "firebase/firestore";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyCj9a5quVsYW5PS5--7DvrO3PRvLGal0zg",
-  authDomain: "cerveceria-rey.firebaseapp.com",
-  projectId: "cerveceria-rey",
-  storageBucket: "cerveceria-rey.appspot.com",
-  messagingSenderId: "981188255704",
-  appId: "1:981188255704:web:2d989678c198b89fba1cad"
+  apiKey: process.env.REACT_APP_API_KEY,
+  authDomain: process.env.REACT_APP_AUTH_DOMAIN,
+  projectId: process.env.REACT_APP_PROJECT_ID,
+  storageBucket: process.env.REACT_APP_STORAGE_BUCKET,
+  messagingSenderId: process.env.MESSAGING_SENDER_ID,
+  appId: process.env.REACT_APP_APP_ID,
 };
 
 const app = initializeApp(firebaseConfig);
