@@ -16,7 +16,7 @@ El proyecto cuenta con las siguientes opciones:
 
 ##  Librerias utilizadas
 
-- [React Bootstrap](https://react-bootstrap.github.io//) Para dar forma a la página web.
+- [Bootstrap](https://getbootstrap.com/) Para dar forma a la página web.
 - [React Router Dom](https://www.npmjs.com/package/react-router-dom) Para la navegación de la página web.
 - [React spinners](https://www.npmjs.com/package/react-spinners) Para utilizar un loading.
 - [Firebase] (https://firebase.google.com/?hl=es) para crear una base de datos que se conectara con el proyecto.
