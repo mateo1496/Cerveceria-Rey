@@ -32,3 +32,7 @@ git clone https://github.com/mateo1496/Cerveceria-Rey.git
 
 
 Realizado por Mateo Bertello (https://github.com/mateo1496/Cerveceria-Rey.git)
+
+### DEPLOY
+- [Deploy](https://cerveceria-rey-uwv6.vercel.app/) Link del proyecto en Deploy
+
