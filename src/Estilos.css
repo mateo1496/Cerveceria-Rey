@@ -285,6 +285,20 @@ li{
     margin-left: 55px;
 }
 
+.buttonBuy{
+    margin-left: 600px;
+    border: 7px solid black;
+    width: 180px;
+    border-radius: 60px;
+    color: white;
+    background-color: black;
+    font-size: 30px;
+    width: 50%;
+    margin-top: 20px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
 /* CART WIDGET */
 .carrito{
     color: black;
@@ -293,7 +307,7 @@ li{
 /* FORM */
 .form{
     margin-top: 60px;
-    margin-left: 900px;
+    margin-left: 550px;
     width: 200px;
 }
 
