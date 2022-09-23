@@ -9,11 +9,11 @@ function Footer() {
                 <img className='imgFooter' src={Logo} alt="Logo" />
             </a>
 
-            <ul className='opcionesFooter'>
-               <a href="https://www.facebook.com" target="_blank"><li className='redes'>Facebook</li></a>
-               <a href="https://www.instagram.com" target="_blank"><li className='redes'>Instagram</li></a>
-               <a href="https://www.twitter.com" target="_blank"><li className='redes'>Twitter</li></a>
-            </ul>
+            <div className='opcionesFooter'>
+               <a href="https://www.facebook.com" className='redes' target="_blank">Facebook</a>
+               <a href="https://www.instagram.com" className='redes' target="_blank">Instagram</a>
+               <a href="https://www.twitter.com" className='redes' target="_blank">Twitter</a>
+            </div>
         </nav>
     </footer>
   )
