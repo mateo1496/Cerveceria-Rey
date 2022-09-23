@@ -24,9 +24,7 @@ const ItemCount = ({stock, onAdd, initial = 1}) => {
     }
   }
 
-  // const comprar = () =>{
-  //     alert(onAdd);
-  // }
+
 
 
   return (
