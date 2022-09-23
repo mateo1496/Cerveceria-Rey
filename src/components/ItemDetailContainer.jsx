@@ -11,7 +11,7 @@ function ItemDetailContainer() {
   const [spinner, setSpinner] = useState(true)
 
   useEffect(() =>{
-    const unicColecction = collection(db, "productos"); 
+    const unicColecction = collection(db, "productos");
     const reference = doc(unicColecction, id); 
     getDoc(reference)
     .then((resp) =>{
