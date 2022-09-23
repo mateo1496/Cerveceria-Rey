@@ -23,7 +23,8 @@ El proyecto cuenta con las siguientes opciones:
 
 ### Pasos para levantar el proyecto localmente
 ``` 
-git clone https://github.com/mateo1496/Cerveceria-Rey.git
+git clone 
+https://github.com/mateo1496/Cerveceria-Rey.git
 ```
 
 `npm install `
