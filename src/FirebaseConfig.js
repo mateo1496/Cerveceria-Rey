@@ -11,5 +11,4 @@ const firebaseConfig = {
 };
 
 const app = initializeApp(firebaseConfig);
-//PARA ACCEDER A LA BASE DE DATOS, PASO LA CONFIGURACION QUE ESTA EN APP. FIRESTORE ACCEDE A MIS CONFIGUTACIONES.
 export const db = getFirestore(app);
