@@ -12,7 +12,7 @@ const Cart = () => {
        return <h2 className='titleCart cobertor'>Usted no compro ningun producto, <Link className='linkCart' to="/"><b>Click Aquí</b></Link> para ir a la pagina principal y seleccionar uno</h2>;
   }
 
-  // console.log(cart);
+
   return (
     <>
       <div>
@@ -33,7 +33,7 @@ const Cart = () => {
       <div className='buttons'>
          <button onClick={clear} className="buttonDelete">Eliminar Productos</button>
          <h4 className='buttonTotal'>Total: ${totalPrice()}</h4>
-         <Link to="/Checkout"><button>ConfirmarCompra</button></Link>
+         <Link to="/Checkout"><button className='buttonBuy'>Confirmar Compra</button></Link>
       </div>
       
     </>
