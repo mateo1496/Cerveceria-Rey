@@ -11,12 +11,11 @@ function ItemDetail({item}) {
 
   const onAdd = (q) => {
     setCantidad(q);
-    addItem(item, q); //ACA PASO EL PRODUCTO Y Q ES LA CANTIDAD, DECIDO QUE QUIERO MOSTRAR.
+    addItem(item, q); 
   } 
 
-  const unicProd = prodCant(item.id); //DEFINIMOS LA CANTIDAD DE CANTIDADES QUE VA A TENER UN PRODUCTO.
+  const unicProd = prodCant(item.id); 
 
-  // console.log(cart); //ME IMPRIME EL ESTADO
 
   return (
     <div style={{display: "flex"}} key={item.id}>
