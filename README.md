@@ -22,8 +22,8 @@ El proyecto cuenta con las siguientes opciones:
 - [Firebase] (https://firebase.google.com/?hl=es) para crear una base de datos que se conectara con el proyecto.
 
 ### Pasos para levantar el proyecto localmente
-``` 
-git clone 
+
+```  
 https://github.com/mateo1496/Cerveceria-Rey.git
 ```
 
