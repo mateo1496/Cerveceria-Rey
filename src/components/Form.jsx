@@ -21,10 +21,9 @@ function Form({cart, totalPrice, clear, handleId}) {
         const orderCollection = collection(db, "ordenes");
         addDoc(orderCollection, order)
         .then((res) =>{
-            // console.log(res.id);
             handleId(res.id);
-            clear(); //PARA BORRAR EL CARRITO
-            // upDateProd();
+            clear();
+            
         });
     };
 
@@ -52,7 +51,3 @@ function Form({cart, totalPrice, clear, handleId}) {
 
 export default Form
 
-// const upDateProd = () =>{
-//     const orderDoc = doc(db, "ordenes", "sBFBWh5Sfrmn9MGoinvK");
-//     upDateProd(orderDoc, {totalPrice: 9000});
-// };
