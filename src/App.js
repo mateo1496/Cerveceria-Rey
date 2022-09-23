@@ -34,5 +34,3 @@ function App() {
 
 export default App;
 
-// import EjercicioApi from './components/EjercicioApi';
-//  <EjercicioApi /> 
