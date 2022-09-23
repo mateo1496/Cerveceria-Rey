@@ -2,7 +2,7 @@
 
 ![](src/LogoProyecto.png)
 
-CerveceriaRey es un proyecto en desarrollo. Se trata de un E-commerce dedicado a la venta de bebidas. Está desarrollado con HTML5, CSS3, Javascript y React Js, basado en el framework "React bootstrap"
+CerveceriaRey es un proyecto en desarrollo. Se trata de un E-commerce dedicado a la venta de bebidas. Está desarrollado con HTML5, CSS3, Javascript y React Js.
 
 El proyecto cuenta con las siguientes opciones:
 
